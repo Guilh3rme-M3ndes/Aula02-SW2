@@ -9,10 +9,7 @@ namespace CBTSWE2.Aula01.Repositorio
 {
     public interface ILivroRepositorio
     {
-        ListaDeLeitura ParaLer { get; }
-        ListaDeLeitura Lendo { get; }
-        ListaDeLeitura Lidos { get; }
-        IEnumerable<Livro> Todos { get; }
         void Incluir(Livro livro);
+        IEnumerable<Livro> Todos();
     }
 }

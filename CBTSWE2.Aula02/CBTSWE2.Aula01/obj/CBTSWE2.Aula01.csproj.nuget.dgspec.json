@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aluno\\Desktop\\CBTSWE2.Aula01\\CBTSWE2.Aula01\\CBTSWE2.Aula01.csproj": {}
+    "C:\\Users\\aluno\\Downloads\\Aula02-SW2-main\\Aula02-SW2-main\\CBTSWE2.Aula02\\CBTSWE2.Aula01\\CBTSWE2.Aula01.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aluno\\Desktop\\CBTSWE2.Aula01\\CBTSWE2.Aula01\\CBTSWE2.Aula01.csproj": {
+    "C:\\Users\\aluno\\Downloads\\Aula02-SW2-main\\Aula02-SW2-main\\CBTSWE2.Aula02\\CBTSWE2.Aula01\\CBTSWE2.Aula01.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aluno\\Desktop\\CBTSWE2.Aula01\\CBTSWE2.Aula01\\CBTSWE2.Aula01.csproj",
+        "projectUniqueName": "C:\\Users\\aluno\\Downloads\\Aula02-SW2-main\\Aula02-SW2-main\\CBTSWE2.Aula02\\CBTSWE2.Aula01\\CBTSWE2.Aula01.csproj",
         "projectName": "CBTSWE2.Aula01",
-        "projectPath": "C:\\Users\\aluno\\Desktop\\CBTSWE2.Aula01\\CBTSWE2.Aula01\\CBTSWE2.Aula01.csproj",
+        "projectPath": "C:\\Users\\aluno\\Downloads\\Aula02-SW2-main\\Aula02-SW2-main\\CBTSWE2.Aula02\\CBTSWE2.Aula01\\CBTSWE2.Aula01.csproj",
         "packagesPath": "C:\\Users\\aluno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aluno\\Desktop\\CBTSWE2.Aula01\\CBTSWE2.Aula01\\obj\\",
+        "outputPath": "C:\\Users\\aluno\\Downloads\\Aula02-SW2-main\\Aula02-SW2-main\\CBTSWE2.Aula02\\CBTSWE2.Aula01\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -54,6 +54,10 @@
             "Microsoft.AspNetCore": {
               "target": "Package",
               "version": "[2.3.12, )"
+            },
+            "Microsoft.Data.Sqlite": {
+              "target": "Package",
+              "version": "[10.0.11, )"
             }
           },
           "imports": [
@@ -68,6 +72,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
