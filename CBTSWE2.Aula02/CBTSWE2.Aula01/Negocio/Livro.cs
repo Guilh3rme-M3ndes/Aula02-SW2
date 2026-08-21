@@ -8,25 +8,28 @@ namespace CBTSWE2.Aula01.Negocio
 {
     public class Livro
     {
-        public int Id { get; set; }
-        public string Titulo { get; set; }
-        public string Autor { get; set; }
-        public ListaDeLeitura Lista { get; set; }
+        public string Titulo { get; private set; }
+        public Autor[] Autores { get; private set; }
+        public double Preco { get; set; }
+        public int Quantidade { get; set; }
 
-        public string Detalhes()
+        public Livro(string titulo, Autor[] autores, double preco, int quantidade = 0)
         {
-            var stringBuilder = new StringBuilder();
-            stringBuilder.AppendLine("Detalhes do Livro");
-            stringBuilder.AppendLine("=====");
-            stringBuilder.AppendLine($"Título: {Titulo}");
-            stringBuilder.AppendLine($"Autor: {Autor}");
-            stringBuilder.AppendLine($"Lista: {Lista.Titulo}");
-            return stringBuilder.ToString();
+            Titulo = titulo;
+            Autores = autores;
+            Preco = preco;
+            Quantidade = quantidade;
+        }
+
+        public string ObterNomesAutores()
+        {
+            return string.Join(", ", Autores.Select(a => a.Nome));
         }
 
         public override string ToString()
         {
-            return $"{Titulo} - {Autor}";
+            var autoresFormatados = string.Join(", ", Autores.Select(a => $"Autor[nome={a.Nome},email={a.Email},genero={a.Genero}]"));
+            return $"Livro[nome={Titulo},autores={{{autoresFormatados}}},preco={Preco},qtd={Quantidade}]";
         }
     }
 }
