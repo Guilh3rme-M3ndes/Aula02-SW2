@@ -1,4 +1,7 @@
-﻿using CBTSWE2.Aula01.Negocio;
+// Stiven Richardy Silva Rodrigues
+// Guilherme Mendes de Sousa
+
+using CBTSWE2.Aula01.Negocio;
 using CBTSWE2.Aula01.Repositorio;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
